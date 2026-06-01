@@ -1,0 +1,27 @@
+name: succession-fragility
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - pyarrow
+  - pyyaml
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - plotly
+  - pillow
+  - requests
+  - tqdm
+  - pytest
+  - pip
+  - pip:
+      - wrds
+      - psycopg2-binary
+      - lightgbm==3.3.5
+      - shap
+      - linearmodels

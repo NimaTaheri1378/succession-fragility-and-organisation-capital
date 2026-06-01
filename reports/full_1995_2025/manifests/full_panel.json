@@ -1,0 +1,80 @@
+{
+  "controls": [
+    "ocf",
+    "size",
+    "bm",
+    "momentum",
+    "profitability",
+    "investment",
+    "leverage",
+    "intangibility",
+    "analyst_coverage"
+  ],
+  "created_at_utc": "2026-06-01T08:02:18+00:00",
+  "has_daily_downside": true,
+  "kind": "full_panel",
+  "n_dates": 360,
+  "n_gvkeys": 8088,
+  "n_panel_rows": 1245777,
+  "n_permnos": 7918,
+  "performance": {
+    "max_drawdown": -0.6008624039001703,
+    "mean_ann": 0.016684686307094312,
+    "sharpe": 0.11110473053012095,
+    "vol_ann": 0.1501708003564351
+  },
+  "status": "ok",
+  "visual_qa": [
+    {
+      "height": 1209,
+      "nonblank": true,
+      "path": "reports/full_1995_2025/figures/ocf_component_heatmap.png",
+      "width": 1496
+    },
+    {
+      "height": 971,
+      "nonblank": true,
+      "path": "reports/full_1995_2025/figures/ocf_long_short.png",
+      "width": 1739
+    },
+    {
+      "height": 861,
+      "nonblank": true,
+      "path": "reports/full_1995_2025/figures/rank_ic_decay.png",
+      "width": 1519
+    }
+  ],
+  "years": [
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}

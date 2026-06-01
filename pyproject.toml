@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "succession-fragility-and-organisation-capital"
+version = "0.1.0"
+description = "Point-in-time asset-pricing study of executive succession fragility and organisation capital."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Nima Taheri"}]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "pyarrow>=14",
+  "PyYAML>=6",
+  "scipy>=1.10",
+  "statsmodels>=0.14",
+  "scikit-learn>=1.3",
+  "requests>=2.31",
+  "tqdm>=4.66",
+  "matplotlib>=3.7",
+  "seaborn>=0.13",
+  "plotly>=5.18",
+  "Pillow>=10",
+]
+
+[project.optional-dependencies]
+wrds = ["wrds>=3.2", "psycopg2-binary>=2.9"]
+ml = ["lightgbm==3.3.5", "torch>=2.1", "shap>=0.44"]
+dev = ["pytest>=7.4", "ruff>=0.4", "black>=24.0", "mypy>=1.8"]
+docs = ["mkdocs>=1.5", "mkdocs-material>=9.5"]
+
+[project.scripts]
+ocf = "succession_fragility.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

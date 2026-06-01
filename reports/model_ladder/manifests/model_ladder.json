@@ -1,0 +1,62 @@
+{
+  "comparison_rows": 4,
+  "created_at_utc": "2026-06-01T09:56:04+00:00",
+  "features": [
+    "ocf",
+    "team_size",
+    "key_person_concentration",
+    "succession_depth_gap",
+    "external_load",
+    "poaching_pressure",
+    "bench_depth",
+    "team_cohesion_decay",
+    "size",
+    "bm",
+    "momentum",
+    "profitability",
+    "investment",
+    "leverage",
+    "intangibility",
+    "analyst_coverage",
+    "forecast_dispersion"
+  ],
+  "kind": "model_ladder",
+  "models": [
+    "elastic_net",
+    "lightgbm",
+    "deep_sets_component_proxy_cuda",
+    "conditional_autoencoder_sdf_cuda"
+  ],
+  "n_panel_rows": 1237537,
+  "neural_test_start_year": 2018,
+  "panel_path": "data/raw/processed/panels/1995_2025/panel.parquet",
+  "public_outputs_aggregate_only": true,
+  "status": "ok",
+  "test_start_year": 2015,
+  "visual_qa": [
+    {
+      "height": 1081,
+      "nonblank": true,
+      "path": "reports/model_ladder/figures/feature_importance.png",
+      "width": 1650
+    },
+    {
+      "height": 949,
+      "nonblank": true,
+      "path": "reports/model_ladder/figures/model_comparison_rank_ic.png",
+      "width": 1739
+    },
+    {
+      "height": 905,
+      "nonblank": true,
+      "path": "reports/model_ladder/figures/partial_dependence_ocf.png",
+      "width": 1607
+    },
+    {
+      "height": 1081,
+      "nonblank": true,
+      "path": "reports/model_ladder/figures/shap_summary.png",
+      "width": 1656
+    }
+  ]
+}

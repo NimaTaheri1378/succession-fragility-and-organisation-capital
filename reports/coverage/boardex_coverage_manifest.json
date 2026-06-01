@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-06-01T06:43:08+00:00",
+  "end_year": 2025,
+  "kind": "boardex_coverage",
+  "max_active_companies": 8136,
+  "output": "reports/coverage/boardex_coverage_by_year.csv",
+  "query": "\n        with years as (\n            select generate_series(1995, 2025)::int as year\n        )\n        select\n            y.year,\n            count(*) as active_role_rows,\n            count(distinct r.companyid) as active_companies,\n            count(distinct r.directorid) as active_people,\n            count(distinct substring(r.isin from 3 for 8)) as active_cusip8,\n            count(*) filter (\n                where lower(coalesce(r.leadershipteam::text, '')) in ('1', 'y', 'yes', 'true', 't')\n            ) as leadership_role_rows\n        from years y\n        left join boardex_na.na_wrds_dir_profile_emp r\n          on r.datestartrole <= make_date(y.year, 12, 31)\n         and (r.dateendrole is null or r.dateendrole >= make_date(y.year, 1, 1))\n         and r.hocountryname in ('United States', 'USA', 'United States of America')\n         and substring(r.isin from 1 for 2) = 'US'\n        group by y.year\n        order by y.year\n    ",
+  "recommended_start_year": 1995,
+  "rows": 31,
+  "stable_threshold_active_companies": 4068,
+  "start_year": 1995
+}

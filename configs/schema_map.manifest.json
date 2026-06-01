@@ -1,0 +1,6 @@
+{
+  "created_at_utc": "2026-06-01T05:45:48+00:00",
+  "hash": "7cf886e54381946b",
+  "kind": "wrds_schema_audit",
+  "output": "configs/schema_map.json"
+}

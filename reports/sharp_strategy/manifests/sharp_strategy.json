@@ -1,0 +1,75 @@
+{
+  "best_candidate": [
+    {
+      "alpha_ann": 0.14122537984780667,
+      "alpha_month": 0.011768781653983889,
+      "boot_ci_high": 0.19908859700320225,
+      "boot_ci_low": 0.077167619470115,
+      "boot_mean_ann": 0.13738175275754647,
+      "max_drawdown": -0.048374957976073385,
+      "mean_ann": 0.1335028774344338,
+      "mean_turnover": 0.6038124975890965,
+      "n_months": 119,
+      "n_obs": 192704,
+      "net10_mean_ann": 0.12631801611858368,
+      "net10_sharpe": 1.173263291901178,
+      "nw_t_monthly_return": 4.115489859514885,
+      "q": 5,
+      "sharpe": 1.2393155228121329,
+      "strategy": "tangible_heavy",
+      "t_alpha": 3.741810698940908,
+      "vol_ann": 0.10772307372661821,
+      "weighting": "equal"
+    }
+  ],
+  "created_at_utc": "2026-06-01T17:43:09+00:00",
+  "features": [
+    "ocf",
+    "team_size",
+    "key_person_concentration",
+    "succession_depth_gap",
+    "external_load",
+    "poaching_pressure",
+    "bench_depth",
+    "team_cohesion_decay",
+    "size",
+    "bm",
+    "momentum",
+    "profitability",
+    "investment",
+    "leverage",
+    "intangibility",
+    "analyst_coverage",
+    "forecast_dispersion"
+  ],
+  "ff5_path": "data/raw/wrds/ff5/all.parquet",
+  "kind": "sharp_strategy",
+  "model": "lightgbm",
+  "n_candidates": 44,
+  "n_panel_rows": 1237537,
+  "n_prediction_rows": 392596,
+  "panel_path": "data/raw/processed/panels/1995_2025/panel.parquet",
+  "public_outputs_aggregate_only": true,
+  "status": "ok",
+  "test_start_year": 2015,
+  "timing_audit": {
+    "high_spread_month_gate_uses_only_prior_months_for_threshold": true,
+    "row_level_predictions_public": false,
+    "target_year_model_uses_only_prior_years": true,
+    "walk_forward_by_target_year": true
+  },
+  "visual_qa": [
+    {
+      "height": 1081,
+      "nonblank": true,
+      "path": "reports/sharp_strategy/figures/sharp_strategy_cumulative.png",
+      "width": 1872
+    },
+    {
+      "height": 1169,
+      "nonblank": true,
+      "path": "reports/sharp_strategy/figures/sharp_strategy_top_returns.png",
+      "width": 1783
+    }
+  ]
+}

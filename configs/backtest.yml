@@ -1,0 +1,21 @@
+portfolio:
+  rebalance: monthly
+  quantiles: 10
+  long_short: top_minus_bottom
+  weighting:
+    - equal
+    - value
+  max_single_name_weight: 0.02
+
+costs:
+  one_way_bps:
+    conservative: 25
+    baseline: 10
+    low: 5
+
+robustness:
+  exclude_financials: true
+  exclude_utilities: true
+  require_deeper_boardex_coverage: true
+  use_industry_fixed_effects: true
+  block_bootstrap_months: 12

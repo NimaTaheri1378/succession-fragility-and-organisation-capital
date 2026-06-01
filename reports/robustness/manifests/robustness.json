@@ -1,0 +1,47 @@
+{
+  "controls": [
+    "ocf",
+    "size",
+    "bm",
+    "momentum",
+    "profitability",
+    "investment",
+    "leverage",
+    "intangibility",
+    "analyst_coverage"
+  ],
+  "created_at_utc": "2026-06-01T08:47:55+00:00",
+  "factor_alpha": {
+    "alpha_ann": 0.024922069907248434,
+    "alpha_month": 0.0020768391589373694,
+    "n_months": 359,
+    "t_alpha": 0.8311045319007832
+  },
+  "ff5_path": "data/raw/wrds/ff5/all.parquet",
+  "kind": "robustness",
+  "n_panel_rows": 1245777,
+  "n_variants": 128,
+  "panel_path": "data/raw/processed/panels/1995_2025/panel.parquet",
+  "regimes_path": "reports/regimes/tables/macro_regimes.csv",
+  "signals": [
+    "ocf",
+    "ocf_kpc_only",
+    "ocf_core_roles",
+    "ocf_no_bench_credit"
+  ],
+  "status": "ok",
+  "visual_qa": [
+    {
+      "height": 993,
+      "nonblank": true,
+      "path": "reports/robustness/figures/rolling_ff5_umd_alpha.png",
+      "width": 1784
+    },
+    {
+      "height": 905,
+      "nonblank": true,
+      "path": "reports/robustness/figures/turnover_cost_frontier.png",
+      "width": 1564
+    }
+  ]
+}

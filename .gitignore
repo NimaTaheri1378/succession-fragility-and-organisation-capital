@@ -1,0 +1,73 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pgpass
+pgpass
+secrets/
+private/
+
+# Licensed or private data
+data/
+raw/
+interim/
+processed/
+feature_store/
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.sas7bdat
+*.dta
+*.rds
+
+# Local planning notes
+Succession Fragility and Organisation Capital in U.S. Equities.md
+
+# Logs and run byproducts
+logs/
+reports/logs/*
+!reports/logs/.gitkeep
+reports/manifests/runtime/*
+reports/visual_qa/runtime/*
+reports/manifests/wrds_*
+reports/manifests/synthetic_run.json
+reports/executive_deep_sets/
+reports/executive_deep_sets_smoke/
+reports/executive_deep_sets_timing_safe_smoke/
+reports/full_2020/
+reports/wrds_smoke/
+reports/figures/
+reports/tables/
+slurm-*.out
+*.log
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build and docs
+build/
+dist/
+site/
+.cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

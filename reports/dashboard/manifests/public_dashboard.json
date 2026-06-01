@@ -1,0 +1,16 @@
+{
+  "aggregate_tables": {
+    "component_trends": "reports/dashboard/tables/component_trends.csv",
+    "industry_bucket": "reports/dashboard/tables/industry_bucket_aggregates.csv"
+  },
+  "created_at_utc": "2026-06-01T17:04:59+00:00",
+  "event_root": "reports/event_study",
+  "executive_root": "reports/executive_deep_sets_timing_safe",
+  "html_path": "reports/dashboard/public_aggregate_dashboard.html",
+  "kind": "public_dashboard",
+  "model_root": "reports/model_ladder",
+  "panel_path": "data/raw/processed/panels/1995_2025/panel.parquet",
+  "public_outputs_aggregate_only": true,
+  "source_root": "reports/full_1995_2025",
+  "status": "ok"
+}

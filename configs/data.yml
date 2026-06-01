@@ -1,0 +1,35 @@
+project:
+  name: succession_fragility
+  local_public_policy: aggregate_only
+  remote_root: "${SCRATCH:-/scratch/$USER}/Github/succession-fragility-and-organisation-capital"
+
+wrds:
+  max_connections_discovery: 1
+  max_connections_sharded: 2
+  required_libraries:
+    - boardex_na
+    - crsp
+    - comp
+  optional_libraries:
+    - ibes
+    - taq
+    - ff
+  stop_on_auth_failure: true
+
+sample:
+  crsp_compustat_backbone_start: "1963-01-01"
+  boardex_effective_start: "discover_from_coverage"
+  latest_complete_year_policy: "exclude_current_partial_year_from_headline"
+  demo_holdout_year: 2026
+
+universe:
+  share_codes: [10, 11]
+  exchange_codes: [1, 2, 3]
+  min_lag_price: 5.0
+  exclude_extreme_microcap_tail: true
+  rebalance: month_end
+
+public_data:
+  publish_row_level_data: false
+  publish_person_level_data: false
+  publish_firm_explorer: false

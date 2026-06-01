@@ -1,0 +1,39 @@
+{
+  "columns": [
+    "date",
+    "vix",
+    "nber_recession",
+    "fed_funds",
+    "term_spread",
+    "credit_spread",
+    "high_vix",
+    "fed_funds_12m_change",
+    "tightening",
+    "inverted_curve",
+    "high_credit_spread"
+  ],
+  "created_at_utc": "2026-06-01T08:21:50+00:00",
+  "end_date": "2024-12-31",
+  "keyless_fred_csv_mode": true,
+  "kind": "macro_regimes",
+  "path": "reports/regimes/tables/macro_regimes.csv",
+  "pull_errors": {},
+  "rows": 360,
+  "series": {
+    "credit_spread": "BAA10YM",
+    "fed_funds": "FEDFUNDS",
+    "nber_recession": "USREC",
+    "term_spread": "T10Y3M",
+    "vix": "VIXCLS"
+  },
+  "start_date": "1995-01-01",
+  "status": "ok",
+  "visual_qa": [
+    {
+      "height": 949,
+      "nonblank": true,
+      "path": "reports/regimes/figures/macro_regime_timeline.png",
+      "width": 1827
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "comparison": [
+    {
+      "model": "executive_deep_sets",
+      "n_obs": 274998,
+      "n_test_years": 7,
+      "rank_ic_mean": 0.007895597849239,
+      "rank_ic_t": 0.3754059537051066
+    }
+  ],
+  "created_at_utc": "2026-06-01T16:44:00+00:00",
+  "device": "cuda",
+  "features": [
+    "role_weight",
+    "log_tenure",
+    "internal_candidate",
+    "outside_roles",
+    "prior_employers"
+  ],
+  "kind": "executive_deep_sets",
+  "max_exec": 32,
+  "n_model_fits": 7,
+  "n_test_obs": 274998,
+  "n_train_obs_total_across_fits": 7551924,
+  "panel_path": "data/raw/processed/panels/1995_2025/panel.parquet",
+  "performance": {
+    "max_drawdown": -0.36782230159631646,
+    "mean_ann": 0.004405938473858451,
+    "sharpe": 0.0404897671670858,
+    "vol_ann": 0.10881609804464486
+  },
+  "public_outputs_aggregate_only": true,
+  "raw_root": "data/raw/wrds",
+  "retained_executive_slots": 28986367,
+  "status": "ok",
+  "test_start_year": 2018,
+  "timing_audit": {
+    "expanding_walk_forward_by_target_year": true,
+    "prior_employers_uses_only_roles_started_before_formation_month": true,
+    "removed_forward_exit_feature": true,
+    "row_level_predictions_public": false,
+    "target_year_model_uses_only_prior_years": true
+  },
+  "training_windows": [
+    {
+      "n_test_obs": 37651,
+      "n_train_obs": 962539,
+      "target_year": 2018,
+      "train_end_year": 2017,
+      "train_start_year": 1995
+    },
+    {
+      "n_test_obs": 37503,
+      "n_train_obs": 1000190,
+      "target_year": 2019,
+      "train_end_year": 2018,
+      "train_start_year": 1995
+    },
+    {
+      "n_test_obs": 37679,
+      "n_train_obs": 1037693,
+      "target_year": 2020,
+      "train_end_year": 2019,
+      "train_start_year": 1995
+    },
+    {
+      "n_test_obs": 40922,
+      "n_train_obs": 1075372,
+      "target_year": 2021,
+      "train_end_year": 2020,
+      "train_start_year": 1995
+    },
+    {
+      "n_test_obs": 42859,
+      "n_train_obs": 1116294,
+      "target_year": 2022,
+      "train_end_year": 2021,
+      "train_start_year": 1995
+    },
+    {
+      "n_test_obs": 41530,
+      "n_train_obs": 1159153,
+      "target_year": 2023,
+      "train_end_year": 2022,
+      "train_start_year": 1995
+    },
+    {
+      "n_test_obs": 36854,
+      "n_train_obs": 1200683,
+      "target_year": 2024,
+      "train_end_year": 2023,
+      "train_start_year": 1995
+    }
+  ],
+  "visual_qa": [
+    {
+      "height": 949,
+      "nonblank": true,
+      "path": "reports/executive_deep_sets_timing_safe/figures/executive_deep_sets_rank_ic.png",
+      "width": 1741
+    }
+  ],
+  "years": [
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}

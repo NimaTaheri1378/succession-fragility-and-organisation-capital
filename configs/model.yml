@@ -1,0 +1,24 @@
+random_seed: 20260601
+
+walk_forward:
+  initial_train_end: "2014-12-31"
+  validation_years: 3
+  test_start: "2018-01-31"
+  freeze_demo_year: 2026
+
+models:
+  run_fama_macbeth: true
+  run_elastic_net: true
+  run_lightgbm: true
+  run_deep_sets: true
+  run_set_transformer: true
+  run_conditional_autoencoder_sdf: true
+
+deep_model:
+  max_executives_per_firm_month: 32
+  hidden_dim: 128
+  dropout: 0.10
+  batch_size: 512
+  epochs_smoke: 2
+  epochs_full: 60
+  use_cuda: true
