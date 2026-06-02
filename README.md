@@ -1,4 +1,4 @@
-# Succession Fragility and Organisation Capital
+# Succession Fragility and Organization Capital
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)
 ![Empirical Finance](https://img.shields.io/badge/Empirical%20Finance-Asset%20Pricing-1f6f8b)
